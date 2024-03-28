@@ -39,7 +39,7 @@
 
 #### Object 클래스란?
 - Java에서 **모든 클래스의 최상위 부모 클래스는 항상 Object 클래스**다.
-  ![img.png](images/img01.png)
+![img.png](images/img01.png)
 - _**클래스의 부모클래스가 없을때 묵시적으로 Object 클래스를 상속**_ 받는다.
     - 굳이 명시적으로 Object 클래스를 상속받을 필요가 없다.
     - Child 는 Parent 를 상속받고 Parent 는 Object 를 상속받기 때문에 **Child 는 Object 클래스의 메서드를 사용**할 수 있다.
