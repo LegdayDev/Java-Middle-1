@@ -5,6 +5,7 @@
 > 2. Object 와 OCP
 > 3. equals() - 동일성과 동등성
 > 4. equals() - 구현
+> 5. 정리
 ---
 ### 1. toString()
 > 1. `toString()` 이란?
@@ -234,3 +235,10 @@
   - **일관성(Consistency)** : 두 객체의 상태가 변경되지 않는 한, equals() 메서드는 항상 동일한 값을 반환해야 한다.
   - **null 에 대한 비교** : 모든 객체는 null 과 비교했을 때 false를 반환해야 한다.
 ---
+### 정리
+
+#### Object 의 나머지 메서드
+- `clone()` : 객체를 복사할 때 사용한다(잘 사용하지 않음)
+- `hashCode()` : `equals()` 와 `hashCode()` 는 종종 함께 사용 -> 추후에 컬렉션 프레임워크때 설명
+- `getClass()`: 현재 클래스의 정보
+- `notify()`, `notifyAll()`, `wait()` : 멀티쓰레드용 메서드

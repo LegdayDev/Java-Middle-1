@@ -11,3 +11,4 @@
 > 2. Object 와 OCP
 > 3. equals() - 동일성과 동등성
 > 4. equals() - 구현
+> 5. 정리
