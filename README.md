@@ -12,3 +12,7 @@
 > 3. equals() - 동일성과 동등성
 > 4. equals() - 구현
 > 5. 정리
+
+## [3일차 : 불변 객체](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day03.md)
+> 1. 기본형과 참조형의 공유
+> 2. 공유 참조와 사이드 이펙트
