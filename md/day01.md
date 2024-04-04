@@ -38,7 +38,7 @@
 > 2. Java 에서 Object 클래스가 최상위 부모클래스인 이유
 
 #### Object 클래스란?
-![img.png](images/img01.png)
+![img.png](images/chap01/img01.png)
 - Java에서 **모든 클래스의 최상위 부모 클래스는 항상 Object 클래스**다.
 - _**클래스의 부모클래스가 없을때 묵시적으로 Object 클래스를 상속**_ 받는다.
     - 굳이 명시적으로 Object 클래스를 상속받을 필요가 없다.
@@ -57,7 +57,7 @@
       }
   }
   ```
-  ![img.png](images/img02.png)
+  ![img.png](images/chap01/img02.png)
 - 즉, ***Java 에서 모든 객체의 최종 부모***는 `Object`이다.
 
 #### Java 에서 Object 클래스가 최상위 부모클래스인 이유
@@ -78,7 +78,7 @@
 
 #### Object 다형성이란?
 - Dog 와 Car 라는 서로 관련이 없는 클래스들은 Object 의 자식이므로 Object 의 기능을 상속받는다.
-![img.png](images/img03.png)
+![img.png](images/chap01/img03.png)
 - 아래 코드와 같이 `Object` 타입으로 파라미터를 가지는 메서드에선 **다운캐스팅**이 필요하다.
   ```java
   public class ObjectPolyExample1 {
@@ -111,7 +111,7 @@
   ```
 #### Object 다형성의 한계
 - `Object` 타입은 부모이기 때문에 부모클래스는 자식클래스의 내용을 모른다. 즉, ***자식 객체의 메서드를 사용할려면 다운캐스팅이 필요***하다 !!
-![img.png](images/img04.png)
+![img.png](images/chap01/img04.png)
 - 아래 코드처럼 다운캐스팅을 하여 각 객체의 메서드를 호출하면 된다.
   ```java
   private static void action(Object obj){
@@ -122,7 +122,7 @@
     else if(obj instanceof Car car) car.move();
   }
   ```
-  ![img.png](images/img05.png)
+  ![img.png](images/chap01/img05.png)
 #### Object를 활용한 다형성의 한계
 - `Object` 는 모든 객체의 부모이기 때문에 모든 객체를 대상으로 다형적 참조가 가능하다.
 - 하지만 ***전달 받은 객체를 호출할려면 객체에 맞는 다운캐스팅 과정이 필요***하다.
@@ -151,7 +151,7 @@
       }
   }
   ```
-  ![img.png](images/img06.png)
+  ![img.png](images/chap01/img06.png)
 - `size(Object[] objects)` 메서드는 `Object` 타입만 사용한다. 즉, **java를 사용하는 어떤 프로젝트에서도 사용**가능한 메서드이다.
 
 #### Object 가 없다면?
