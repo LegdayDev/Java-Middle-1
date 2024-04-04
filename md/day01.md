@@ -1,6 +1,6 @@
 ## 자바 중급 1편
 
-### Object 클래스 학습(24.03.28)
+### Object 클래스 학습
 > 1. java.lang 패키지
 > 2. Object 클래스
 > 3. Object 다형성

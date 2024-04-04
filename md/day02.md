@@ -1,6 +1,6 @@
 ## 자바 중급 1편
 
-### Object 클래스 학습(24.03.29)
+### Object 클래스 학습
 > 1. toString()
 > 2. Object 와 OCP
 > 3. equals() - 동일성과 동등성
