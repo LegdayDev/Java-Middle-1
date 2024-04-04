@@ -16,3 +16,8 @@
 ## [3일차 : 불변 객체](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day03.md)
 > 1. 기본형과 참조형의 공유
 > 2. 공유 참조와 사이드 이펙트
+
+## [4일차 : 불변 객체 학습 계속](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day04.md)
+> 1. 불변 객체 - 도입
+> 2. 불변 객체 - 예제
+> 3. 불변 객체 - 값 변경
