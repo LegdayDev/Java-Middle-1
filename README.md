@@ -27,3 +27,7 @@
 > 1. String 클래스 - 기본
 > 2. String 클래스 - 비교
 > 3. String 클래스 - 불변 객체
+
+## [6일차 : String 클래스](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day06.md)
+> 1. String 클래스 - 주요 메서드 
+> 2. StringBuilder - 가변 String
