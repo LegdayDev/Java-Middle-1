@@ -165,4 +165,4 @@
 - `String` 이 불변으로 설계된 이유는 `String Pool` 때문이다 !!
 - String Pool 에 있는 String 인스턴스 값이 바뀌게 되면 문자열을 참조하는 다른 변수의 값도 함께 변경되기 때문이다 !!
 
-  ![img.png](img.png)
+  ![img.png](images/chap03/img09.png)
