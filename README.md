@@ -35,3 +35,9 @@
 ## [7일차 : String 클래스](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day07.md)
 > 1. String 최적화
 > 2. 메서드 체인닝 - Method Chaining
+
+## [8일차 : 래퍼, Class 클래스](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day08.md)
+> 1. 래퍼 클래스 - 기본형의 한계1
+> 2. 래퍼 클래스 - 기본형의 한계2
+> 3. 래퍼 클래스 - 자바 래퍼 클래스
+> 4. 래퍼 클래스 - 오토 박싱
