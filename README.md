@@ -41,3 +41,9 @@
 > 2. 래퍼 클래스 - 기본형의 한계2
 > 3. 래퍼 클래스 - 자바 래퍼 클래스
 > 4. 래퍼 클래스 - 오토 박싱
+
+## [9일차 : 래퍼, Class 클래스](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day09.md)
+> 1. 래퍼 클래스 - 주요 메서드와 성능
+> 2. Class 클래스
+> 3. System 클래스 
+> 4. Math, Random 클래스
