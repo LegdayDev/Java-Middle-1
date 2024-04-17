@@ -47,3 +47,8 @@
 > 2. Class 클래스
 > 3. System 클래스 
 > 4. Math, Random 클래스
+
+## [10일차 : 열거형 - ENUM](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day10.md)
+> 1. 문자열과 타입 안정성1
+> 2. 문자열과 타입 안정성2
+> 3. 타입 안전 열거형 패턴(Type-Safe Enum Pattern)
