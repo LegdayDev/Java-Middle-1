@@ -52,3 +52,10 @@
 > 1. 문자열과 타입 안정성1
 > 2. 문자열과 타입 안정성2
 > 3. 타입 안전 열거형 패턴(Type-Safe Enum Pattern)
+
+## [11일차 : 열거형 - ENUM](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day11.md)
+> 1. 열거형 - Enum Type
+> 2. 열거형 - 주요 메서드
+> 3. 열거형 - 리팩토링 1
+> 4. 열거형 - 리팩토링 2
+> 5. 열거형 - 리팩토링 3

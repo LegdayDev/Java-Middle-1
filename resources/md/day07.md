@@ -39,7 +39,7 @@
       }
   }
   ```
-  ![img.png](images/chap03/img11.png)
+  ![img.png](../images/chap03/img11.png)
 - 고작 10만번 연산하는데 2초나 걸리는건 문자열 결합이 루프안에서 최적화가 안된다는것을 뜻한다.
 - 반복문에서 n번동안 n개의 객체를 생성한다.
   ```java
@@ -66,7 +66,7 @@
       }
   }
   ```
-  ![img.png](images/chap03/img12.png)
+  ![img.png](../images/chap03/img12.png)
 
 #### StringBuilder 사용하는게 좋은 경우
 1. 반복문에서 반복해서 문자를 연결할 때
@@ -113,10 +113,10 @@
       }
   }
   ```
-  ![img.png](images/chap03/img13.png)
+  ![img.png](../images/chap03/img13.png)
 - 모든 객체가 같은 참조값을 가리킨다. 그림으로 보면 아래와 같다.
 
-  ![img.png](images/chap03/img14.png)
+  ![img.png](../images/chap03/img14.png)
 - 하지만 이런 방식은 코드가독성도 좋지않고 불편한 코드이다.
 - 그러나 위 방식을 아래와 같이 바꾸면 왜 저렇게 자기자신을 반환하고 사용했는지 알게 된다.
   ```java
@@ -128,7 +128,7 @@
     }
   }
   ```
-  ![img.png](images/chap03/img15.png)
+  ![img.png](../images/chap03/img15.png)
 - `adder` 라는 참조변수의 참조값에 `.` 을 찍어 체인처럼 계속 연결되어 값을 가져온다 -> 이를 `메서드 체이닝` 이라 한다!!
 - _**메서드 체이닝 기법은 코드를 간결하고 읽기 쉽게 만들어준다.**_
 - `StringBuilder` 클래스는 **메서드 체이닝 기법을 제공**한다.

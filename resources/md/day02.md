@@ -33,7 +33,7 @@
         }
     }
     ```
-  ![img.png](images/chap01/img07.png)
+  ![img.png](../images/chap01/img07.png)
 - `System.out.println()` 메서드 내부에는 `Object.toString()` 을 호출하기 때문에 결과가 같다!
 
 #### toString() 오버라이딩
@@ -41,7 +41,7 @@
 - 보통 객체에서 `toString()`을 오버라이딩하여 유용한 정보를 제공하는 것이 일반적이다.
 - 아래 그림처럼 `Dog` 클래스만 `toString()` 을 오버라이딩 하고 `Car` 클래스는 기본 `toString()` 을 쓴다면 다른 결과가 나오게 된다.
   
-  ![img.png](images/chap01/img08.png)
+  ![img.png](../images/chap01/img08.png)
 - `toString()` 은 직접 출력값을 바꿀 수 있고 툴에서 제공해주는 자동완성기능을 이용하면 편리하게 객체정보를 볼 수 있다.
   ```java
   public class Dog {
@@ -76,7 +76,7 @@
       }
   }
   ```
-  ![img.png](images/chap01/img09.png)
+  ![img.png](../images/chap01/img09.png)
 
 #### 객체의 참조값 직접 출력
 - `toString()`을 **오버라이딩 하지 않고 쓰면 객체의 참조값을 출력**한다.
@@ -104,7 +104,7 @@
   ```
 - 위 코드를 해석하면  `ObjectPrinter` 는 `Object` 에 의존한다고 한다.
 
-  ![img_1.png](images/chap01/img10.png)
+  ![img_1.png](../images/chap01/img10.png)
 - `ObjectPrinter` 는 _**추상적인 것에 의존하기 때문에 OCP 원칙을 위배하지 않는다.**_ 
 
 #### OCP(Open Closed Principle) 원칙
@@ -115,7 +115,7 @@
 #### System.out.println()
 - 위에서 구현한 `ObjectPrinter` 는 결국엔 `Java` 에서 자주쓰는 `System.out.println()` 과 똑같은 기능을 가졌다.
 - `System.out.println()` 메서드 내부에 `Object.toString()` 메서드가 있기 때문에 객체 자체를 출력해도 객체 정보가 출력된다.
-  ![img.png](images/chap01/img11.png)
+  ![img.png](../images/chap01/img11.png)
 ---
 ### 3. equals() - 동일성과 동등성
 > 1. 동일성과 동등성이란?
@@ -143,7 +143,7 @@
       }
   }
   ```
-  ![img.png](images/chap01/img12.png)
+  ![img.png](../images/chap01/img12.png)
 - `equals()` 는 동등성을 비교하는데 False 가 나오는 이유는 `equals()` 메서드 내부를 보면 알 수 있다.
   ```java
    public boolean equals(Object obj) {
@@ -190,18 +190,18 @@
       }
   }
   ```
-  ![img.png](images/chap01/img13.png)
+  ![img.png](../images/chap01/img13.png)
 
 #### 정확한 equals() 구현
 - 위에서 구현한 `equals()` 는 간단한 예제를 위해 오버라이딩 한 것이고, 실제로 정확히 동작하려면 다음과 같이 구현해야 한다 !
 - _IntelliJ 를 포함한 대부분의 IDE_ 에서는 `equals()` 코드를 자동으로 만들어준다.
 - `command + n` 을 누르고 `equals() and hashCode()` 를 클릭하면 아래처럼 뜬다. 순서대로 해보자
   
-  ![img_1.png](images/chap01/img14.png)
+  ![img_1.png](../images/chap01/img14.png)
 
-  ![img_2.png](images/chap01/img15.png)
+  ![img_2.png](../images/chap01/img15.png)
 
-  ![img_3.png](images/chap01/img16.png)
+  ![img_3.png](../images/chap01/img16.png)
 
 - 최종적으로 정확한 `equals()` 코드가 완성된다.
   ```java

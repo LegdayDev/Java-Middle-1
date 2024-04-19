@@ -84,7 +84,7 @@
       }
   }
   ```
-  ![img.png](images/chap03/img01.png)
+  ![img.png](../images/chap03/img01.png)
 ---
 ### 2. String 클래스 - 비교
 > `String` 클래스를 비교할 때는 `==` 비교가 아닌 `equals()` 비교를 해야한다.
@@ -103,10 +103,10 @@
       }
   }
   ```
-  ![img.png](images/chap03/img02.png)
+  ![img.png](../images/chap03/img02.png)
 - 메모리 구조를 보게 되면 `str1` 과 `str2` 는 `heap` 메모리공간에서 **다른 메모리 주소를 가리키고 있다.**
 
-  ![img.png](images/chap03/img04.png)
+  ![img.png](../images/chap03/img04.png)
 - 즉, "hello" 라는 값을 갖고 있기 떄문에 동등성(`equals()`)는 `true` 지만 동일성(`==`)은 `false` 이다.
 #### = 연산자로 만든 String 객체 동일성,동등성 비교
 - 하지만 `String` 을 `=` 연산자로 값을 대입해서 동등성과 동일성을 비교하면 같은 값이 나오게 된다.
@@ -120,10 +120,10 @@
       }
   }
   ```
-  ![img.png](images/chap03/img03.png)
+  ![img.png](../images/chap03/img03.png)
 - `=` 연산자로 생성한 `String` 객체들은 `문자열 풀(String Pool)` 이라는 공간에 들어가 있다.
 
-  ![img.png](images/chap03/img05.png)
+  ![img.png](../images/chap03/img05.png)
 - 위 코드의 `String str3 = "hello";` 와 같이 ***문자열 리터럴를 사용하는 경우 자바는 메모리 효율성과 성능 최적화***를 위해 `String Pool` 을 사용한다.
 - `String Pool` 은 `Java` 가 **실행되는 시점에 클래스에 문자열 리터럴이 있으면 String Pool 에 String 인스턴스를 미리 만들어둔다.** 이때 같은 문자열이 또 있다면 만들지 않는다.
   > **<참고**></br>
@@ -144,7 +144,7 @@
       }
   }
   ```
-  ![img.png](images/chap03/img06.png)
+  ![img.png](../images/chap03/img06.png)
   - 값이 제대로 안나온다!! 왜냐하면 불변객체의 특성 때문이다. 
 - `concat()` 메서드는 ***불변객체의 특성 떄문에 기존의 값을 변경하지 않고 변경값을 가지는 새로운 String 객체를 반환***한다 !!
   ```java
@@ -156,13 +156,13 @@
       }
   }
   ```
-  ![img.png](images/chap03/img07.png)
+  ![img.png](../images/chap03/img07.png)
 - 실행과정은 아래와 같다 
   - `concat()` 메서드를 호출하면 ***기존의 값과 추가할값을 더한 새로운 결과값을 new String() 에 담아 반환***하게 된다.
-  ![img_1.png](images/chap03/img08.png)
+  ![img_1.png](../images/chap03/img08.png)
 
 #### String 클래스가 불변으로 설계된 이유
 - `String` 이 불변으로 설계된 이유는 `String Pool` 때문이다 !!
 - String Pool 에 있는 String 인스턴스 값이 바뀌게 되면 문자열을 참조하는 다른 변수의 값도 함께 변경되기 때문이다 !!
 
-  ![img.png](images/chap03/img09.png)
+  ![img.png](../images/chap03/img09.png)

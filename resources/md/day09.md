@@ -30,7 +30,7 @@
         }
     }
     ```
-  ![img.png](images/chap04/img02.png)
+  ![img.png](../images/chap04/img02.png)
 
 #### 래퍼 클래스와 성능
 - 래퍼 클래스는 기본형보다 다양한 기능을 제공한다.
@@ -54,7 +54,7 @@
       }
   }
   ```
-  ![img.png](images/chap04/img03.png)
+  ![img.png](../images/chap04/img03.png)
 - 래퍼 클래스를 사용할 때 연산 시간은 아래와 같다.
   ```java
   public class WrapperVsPrimitive {
@@ -74,7 +74,7 @@
       }
   }
   ```
-  ![img.png](images/chap04/img04.png)
+  ![img.png](../images/chap04/img04.png)
 - _**기본형은 래퍼 클래스보다 대략 5배정도의 속도차이가 있다.**_
 - 이러한 속도차이가 나는 이유는 **기본형은 메모리에서 단순히 그 크기만큼 공간을 차지**한다. -> `int` 는 `4byte`
 - 하지만 래퍼 클래스는 내부에 필드로 가지고 있는 **기본형의 값, 객체 메타 데이터를 포함하므로 더 많은 메모리를 사용.** -> 대략 `8~16byte`(Java 버전과 시스템마다 다름)
@@ -158,7 +158,7 @@
       }
   }
   ```
-  ![img.png](images/chap04/img05.png)
+  ![img.png](../images/chap04/img05.png)
   - `getDeclaredConstructor()` : 생성자를 선택한다.
   - `nesInstance()` : 선택된 생성자를 기반으로 인스턴스를 생성한다.
 
@@ -209,7 +209,7 @@
       }
   }
   ```
-  ![img.png](images/chap04/img06.png)
+  ![img.png](../images/chap04/img06.png)
 ---
 ### 4. Math, Random 클래스
 #### Math 클래스
@@ -256,7 +256,7 @@
         }
     }
     ```
-  ![img_1.png](images/chap04/img08.png)
+  ![img_1.png](../images/chap04/img08.png)
     > 참고 : 아주 정밀한 숫자의 반올림 계산이 필요하면 `BigDecimal` 을 사용
 
 #### Random 클래스
@@ -290,6 +290,6 @@
       }
   }
   ```
-  ![img.png](images/chap04/img09.png)
+  ![img.png](../images/chap04/img09.png)
 #### 씨드 - Seed
 > `Random` 은 내부에서 씨드(Seed)값을 사용하여 랜덤 값을 구한다. 만약 씨드값이 같으면 항상 같은 결과가 출력된다.
