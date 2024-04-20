@@ -58,3 +58,7 @@
 > 2. 열거형 - 주요 메서드
 > 3. 열거형 - 리팩토링 1
 > 4. 열거형 - 리팩토링 2
+
+## [12일차 : 열거형 - ENUM](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day12.md)
+> 1. 열거형 - 리팩토링
+> 2. 문제 및 정리
