@@ -62,3 +62,7 @@
 ## [12일차 : 열거형 - ENUM](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day12.md)
 > 1. 열거형 - 리팩토링
 > 2. 문제 및 정리
+
+## [13일차 : 날짜와 시간](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day13.md)
+> 1. 날짜와 시간 라이브러리가 필요한 이유
+> 2. 자바 날짜와 시간 라이브러리의 역사
