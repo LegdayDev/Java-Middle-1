@@ -66,3 +66,7 @@
 ## [13일차 : 날짜와 시간](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day13.md)
 > 1. 날짜와 시간 라이브러리가 필요한 이유
 > 2. 자바 날짜와 시간 라이브러리의 역사
+
+## [14일차 : 날짜와 시간](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day14.md)
+> 1. 자바 날짜와 시간 라이브러리 소개
+> 2. 기본 날짜와 시간 - LocalDateTime
