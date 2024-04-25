@@ -70,3 +70,8 @@
 ## [14일차 : 날짜와 시간](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day14.md)
 > 1. 자바 날짜와 시간 라이브러리 소개
 > 2. 기본 날짜와 시간 - LocalDateTime
+
+## [15일차 : 날짜와 시간](https://github.com/LegdayDev/Java-Middle-1/blob/master/md/day15.md)
+> 1. 타임존 - ZonedDateTime
+> 2. 기계 중심의 시간 - Instant
+> 3. 시간, 시간의 간격 - Duration, Period
