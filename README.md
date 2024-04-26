@@ -75,3 +75,8 @@
 > 1. 타임존 - ZonedDateTime
 > 2. 기계 중심의 시간 - Instant
 > 3. 기간, 시간의 간격 - Duration, Period
+
+## [16일차 : 날짜와 시간](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/resources/md/day16.md)
+> 1. 날짜와 시간의 핵심 인터페이스
+> 2. 시간의 단위와 시간 필드
+> 3. 날짜와 시간 조회하고 조작하기
