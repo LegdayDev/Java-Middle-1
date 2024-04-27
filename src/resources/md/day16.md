@@ -245,7 +245,7 @@ public class ChronoUnitMain {
         }
     }
     ```
-  ![img.png](img.png)
+  ![img.png](../images/chap06/img14.png)
     - 위 코드처럼 `get()` 메서드의 `ChoronoField` 를 사용하였는데, `get()` 메서드는 `TemporalAccessor` 인터페이스의 메서드를 `LocalDateTime` 이 오버라이딩
       한것이다.
     - 그래서 `get()` 을 호출하면서 `TemporalAccessor` 의 구현체인 `ChronoField` 를 인자로 넘겨준 것이다.
@@ -253,6 +253,7 @@ public class ChronoUnitMain {
     - 편의메서드에 없는 기능은 그 때 get() 을 사용하면 된다.
 
 ### 날짜와 시간 조작하기
+
 - 날짜와 시간을 조작하려면 **어떤 시간 단위(Unit)을 변경**할 지 선택해야 한다. 이 때 `ChronoUnit` 이 사용된다.
     ```java
     import java.time.LocalDateTime;
@@ -276,29 +277,31 @@ public class ChronoUnitMain {
         }
     }
     ```
-  ![img_1.png](img_1.png)
-  - `LocalDateTime` 을 포함한 특정 시점의 시간을 제공하는 클래스는 모두 **Temporal 인터페이스를 구현**한다.
-  - `plus()` 메서드를 호출할 때는 **더할 숫자**와 **시간의 단위(Unit)**을 전달해주면 된다.
-  - 똑같이 편의메서드도 제공된다, `plus(10, ChronoUnit.YEARS)` -> `plusYears(10)`
-  - `Period` 객체를 통해서 조작이 가능하다.
+  ![img_1.png](../images/chap06/img15.png)
+    - `LocalDateTime` 을 포함한 특정 시점의 시간을 제공하는 클래스는 모두 **Temporal 인터페이스를 구현**한다.
+    - `plus()` 메서드를 호출할 때는 **더할 숫자**와 **시간의 단위(Unit)**을 전달해주면 된다.
+    - 똑같이 편의메서드도 제공된다, `plus(10, ChronoUnit.YEARS)` -> `plusYears(10)`
+    - `Period` 객체를 통해서 조작이 가능하다.
 
 #### 주의점
-- `TemporalAccessor` 와 `Temporal` 인터페이스의 구현체가 `LcoalDateTime`, `LocalDate` 등등 이기 때문에 `get()`, `plus()` 와 같은 메서드를 통해 조회, 조작을 쉽게 할 수 있다.
-- 하지만 모든 시간 필드를 조회할 수 있는 것은 아니다. 
-  - `LocalDate` 에는 날**짜정보만 있기 때문에 시간 정보를 조회할려고하면 예외**가 터진다.
-      ```java
-      import java.time.LocalDate;
-      import java.time.temporal.ChronoField;
-    
-      public class IsSupportedMain1 {
-          public static void main(String[] args) {
-              LocalDate now = LocalDate.now();
-              int minute = now.get(ChronoField.SECOND_OF_MINUTE);
-              System.out.println("minute = " + minute);
-          }
-      }
-      ```
-    ![img_2.png](img_2.png)
+
+- `TemporalAccessor` 와 `Temporal` 인터페이스의 구현체가 `LcoalDateTime`, `LocalDate` 등등 이기 때문에 `get()`, `plus()` 와 같은 메서드를 통해 조회,
+  조작을 쉽게 할 수 있다.
+- 하지만 모든 시간 필드를 조회할 수 있는 것은 아니다.
+    - `LocalDate` 에는 날**짜정보만 있기 때문에 시간 정보를 조회할려고하면 예외**가 터진다.
+        ```java
+        import java.time.LocalDate;
+        import java.time.temporal.ChronoField;
+      
+        public class IsSupportedMain1 {
+            public static void main(String[] args) {
+                LocalDate now = LocalDate.now();
+                int minute = now.get(ChronoField.SECOND_OF_MINUTE);
+                System.out.println("minute = " + minute);
+            }
+        }
+        ```
+      ![img_2.png](../images/chap06/img16.png)
 - 이런 경우를 대비하여 `TemporalAccessor` 와 `Temporal` 인터페이스는 **현재 타입에서 특정 시간 단위나 필드를 사용할 수 있는지 확인할 수 있는 메서드를 제공**한다.
   ```java
   public class IsSupportedMain2 {
@@ -313,6 +316,7 @@ public class ChronoUnitMain {
   ```
 
 ### 날짜와 시간 조작하기 2
+
 - `Temporal.with()` 메서드는 **날짜와 시간의 특정 필드의 값만 변경**할 수 있다.
 - 똑같이 편의메서드가 제공된다(`withYear()` 등등)
 - `TemporalAdjuster` 를 사용하면 복잡한 날짜 계산도 가능하다.(예를 들면 다음주 금요일, 이번달 마지막 일요일 등등)
@@ -345,14 +349,37 @@ public class ChronoUnitMain {
       }
   }
   ```
-  ![img_3.png](img_3.png)
+  ![img_3.png](../images/chap06/img17.png)
 
 #### TemporalAdjuster 인터페이스
+
 ```java
 public interface TemporalAdjuster {
     Temporal adjustInto(Temporal temporal);
 }
 ```
+
 - Java 에서는 `TemporalAdjuster` 인터페이스 구현체들을 `TemporalAdjusters` 에 다 만들어 두었다.
-  - `TemporalAdjusters.next(DayOfWeek.FRIDAY)` : 다음주 금요일
-  - `TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY)` : 이번 달의 마지막 일요일
+    - `TemporalAdjusters.next(DayOfWeek.FRIDAY)` : 다음주 금요일
+    - `TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY)` : 이번 달의 마지막 일요일
+
+#### TemporalAdjusters 클래스가 제공하는 주요 메서드
+
+| 메서드                   | 설명                                                         |
+|-----------------------|------------------------------------------------------------|
+| `dayOfWeekInMonth`    | 주어진 요일이 몇 번째인지에 따라 날짜를 조정한다.                               |
+| `firstDayOfMonth`     | 해당 월의 첫째 날로 조정한다.                                          |
+| `firstDayOfNextMonth` | 다음 달의 첫째 날로 조정한다.                                          |
+| `firstDayOfNextYear`  | 다음 해의 첫째 날로 조정한다.                                          |
+| `firstDayOfYear`      | 해당 해의 첫째 날로 조정한다.                                          |
+| `firstInMonth`        | 주어진 요일 중 해당 월의 첫 번째 요일로 조정한다.                              |
+| `lastDayOfMonth`      | 해당 월의 마지막 날로 조정한다.                                         |
+| `lastDayOfNextMonth`  | 다음 달의 마지막 날로 조정한다.                                         |
+| `lastDayOfNextYear`   | 다음 해의 마지막 날로 조정한다.                                         |
+| `lasyDayOfYear`       | 해당 해의 마지막 날로 조정한다.                                         |
+| `lastInMonth`         | 주어진 요일 중 해당 월의 마지막 요일로 조정한다.                               |
+| `next`                | 주어진 요일 이후의 가장 가까운 요일로 조정한다.                                |
+| `nextOrSame`          | 주어진 요일 이후의 가장 가까운 요일로 조정하되, 현재 날짜가 주어진 요일인 경우 현재 날짜를 반환한다. |
+| `previous`            | 주어진 요일 이전의 가장 가까운 요일로 조정한다.                                |
+| `previousOrSame`      | 주어진 요일 이전의 가장 가까운 요일로 조정하되, 현재 날짜가 주어진 요일인 경우 현재 날짜를 반환한다. |
+
