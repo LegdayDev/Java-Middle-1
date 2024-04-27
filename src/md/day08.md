@@ -129,7 +129,7 @@
       }
   }
   ```
-  ![img.png](../images/chap04/img01.png)
+  ![img.png](../resources/images/chap04/img01.png)
 - 위와 같이 수정하면 `null` 이 반환되면 못찾았다는 것을 알 수 있다.
 ---
 ### 3. 래퍼 클래스 - 자바 래퍼 클래스

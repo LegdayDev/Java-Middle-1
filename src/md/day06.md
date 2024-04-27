@@ -120,7 +120,7 @@
       }
   }
   ```
-  ![img.png](../images/chap03/img10.png)
+  ![img.png](../resources/images/chap03/img10.png)
 
 > 즉, `StringBuilder` 로 문자열을 변경하고 ***문자열 변경이 끝나면 안전한(불변) String 으로 변환***하는 것이 좋다
 

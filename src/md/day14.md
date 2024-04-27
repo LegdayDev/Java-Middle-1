@@ -78,7 +78,7 @@
         }
     }
     ```
-    ![img.png](../images/chap06/img01.png)
+    ![img.png](../resources/images/chap06/img01.png)
 #### LocalTime
 - 메서드들은 `LocalDate` 와 똑같으며 불변이다 !
     ```java
@@ -96,7 +96,7 @@
         }
     }
     ```
-    ![img_1.png](../images/chap06/img02.png)
+    ![img_1.png](../resources/images/chap06/img02.png)
 
 #### LocalDateTime 
 - `LocalDateTime` 클래스 내부를 보면 `LocalTime` 과 `LocalDate` 를 가지고 있다.
@@ -153,5 +153,5 @@
           }
       }
       ```
-      ![img.png](../images/chap06/img03.png)
+      ![img.png](../resources/images/chap06/img03.png)
 ---

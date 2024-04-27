@@ -19,7 +19,7 @@
 - 열거형은 자동으로 `java.lang.Enum` 을 상속받는다.
 - 외부에서 임의로 생성할 수 없다.
 
-    ![img.png](../images/chap05/img07.png)
+    ![img.png](../resources/images/chap05/img07.png)
 - 위 그림이 맞는지 확인해보자.
   - `Enum` 은 `toString()`을 오버라이딩 되어 있어서 참조값을 확인할려면 별도의 메서드를 만들어서 확인해야 한다.
   - `System.identityHashCode(object)` : `Java` 가 관리하는 객체의 참조값을 숫자로 반환한다.
@@ -42,7 +42,7 @@
       }
   }
   ```
-  ![img.png](../images/chap05/img08.png)
+  ![img.png](../resources/images/chap05/img08.png)
 
 #### 예제에 ENUM 적용
 - 기존의 `DiscountService` 코드에서 `Enum` 으로 수정하였다.
@@ -78,7 +78,7 @@
       }
   }
   ```
-  ![img.png](../images/chap05/img09.png)
+  ![img.png](../resources/images/chap05/img09.png)
 
 #### ENUM 의 장점
 1. `타입 안정성 향상` : 열거형에 정의된 상수들만 사용할 수 있기 때문에, ***유효하지 않은 값이 입력될 가능성이 없다.***
@@ -109,7 +109,7 @@
       }
   }
   ```
-  ![img.png](../images/chap05/img10.png)
+  ![img.png](../resources/images/chap05/img10.png)
 
 #### `ordinal()` 가급적 사용 X
 - _**ENUM 상수 중간에 새로운 상수가 추가되면 기존의 상수의 순번이 모두 변경된다 !!**_
@@ -186,7 +186,7 @@
       }
   }
   ```
-  ![img.png](../images/chap05/img11.png)
+  ![img.png](../resources/images/chap05/img11.png)
 ---
 ### 4. 열거형 - 리팩토링 2
 - 기존의 타입안전 열거형패턴으로 짠 ClassGrade 를 보면 Grade(등급)과 discountPercnet(할인율)이 1대1로 관련이 있다.
@@ -232,4 +232,4 @@
     }
   }
   ```
-  ![img.png](../images/chap05/img12.png)
+  ![img.png](../resources/images/chap05/img12.png)

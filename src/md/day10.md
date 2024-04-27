@@ -42,7 +42,7 @@
         }
     }
     ```
-  ![img.png](../images/chap05/img01.png)
+  ![img.png](../resources/images/chap05/img01.png)
 - 위와 같은 비즈니에서 등급을 문자열로 사용하면 다음과 같은 문제가 있다.
   - **타입 안정성 부족** : 문자열은 ***오타가 자주 발생***하고, ***유효하지 않은 값이 입력***될 수 있다.
   - **데이터 일관성** : `GOLD`, `Gold`, `gold` 등 ***다양한 형식으로 문자열을 입력할 수 있어 일관성***이 떨어진다.
@@ -92,7 +92,7 @@
       }
   }
   ```
-  ![img.png](../images/chap05/img02.png)
+  ![img.png](../resources/images/chap05/img02.png)
 - 이렇게 기존의 등급을 문자열이 아닌 문자열상수로 받기 때문에 `StringGrade` 클래스에 속하는 문자열만 사용할 수 있게 된다.
 - **오타가 나도 컴파일 시점에 오류가 발생하기 때문에 개발자가 바로 찾을 수 있다.**
 - 하지만 문자열상수도 완전히 안전한 방법은 아니다. 왜냐하면 _문자열상수가 아닌 문자열을 입력해도 컴파일이 되기 때문이다._
@@ -110,7 +110,7 @@
       public static final ClassGrade DIAMOND = new ClassGrade();
   }
   ```
-  ![img.png](../images/chap05/img03.png)
+  ![img.png](../resources/images/chap05/img03.png)
 - 기존의 `DiscountService` 의 코드도 변경된다.
   ```java
   public class DiscountService {
@@ -145,7 +145,7 @@
       }
   }
   ```
-  ![img.png](../images/chap05/img04.png)
+  ![img.png](../resources/images/chap05/img04.png)
 - 오타, 유효하지 않은 값을 입력해도 `ClassGrade` 에 있는 상수필드만 사용할 수 있기 때문에 컴파일 이전에 오류를 잡을 수 있다.
 - 하지만 이 방법도 완벽하지 않다. 아래 예제를 통해 보자.
   - 새로운 `ClassGrade` 객체를 만들어 넣을 수 있다. 파라미터 타입이 같기 때문에 에러도 뜨지 않는다.
@@ -160,7 +160,7 @@
       }
   }
   ```
-  ![img.png](../images/chap05/img05.png)
+  ![img.png](../resources/images/chap05/img05.png)
 - 위 방법을 막을려면 생성자를 `private` 로 막아버리면 컴파일에러가 뜨기때문에 잡을 수 있다.
   ```java
   public class ClassGrade {
@@ -172,7 +172,7 @@
       private ClassGrade() {}
   }
   ```
-  ![img_1.png](../images/chap05/img06.png)
+  ![img_1.png](../resources/images/chap05/img06.png)
 
 #### 타입 안전 열거형 패턴(Type-Safe Enum Pattern)의 장점
 - `타입 안정성 향상` : 정해지 객체만 사용하기 때문에 ***잘못된 값을 입력하는 문제를 근본적으로 방지***할 수 있다.

@@ -52,10 +52,10 @@
         }
     }
     ```
-  ![img.png](../images/chap02/img08.png)
+  ![img.png](../resources/images/chap02/img08.png)
 - 그렇게 되면 개발자는 새로운 객체를 만들어 사용하게 된다
 
-    ![img.png](../images/chap02/img09.png)
+    ![img.png](../resources/images/chap02/img09.png)
 - _**불변이라는 단순한 제약을 사용하여 사이드 이펙트를 막을 수 있다 !**_
 > `가변(Mutable)객체` 와 `불변(Immutable)객체` </br>가변은 이름 그대로 처음 만든 이후 상태가 변할 수 있고, 불변은 처음 만든 이후 상태가 변하지 않는 뜻이다.
 ---
@@ -109,7 +109,7 @@
     }
   }
   ```
-  ![img.png](../images/chap02/img10.png)
+  ![img.png](../resources/images/chap02/img10.png)
 - **가변객체를 사용할 때 공유객체의 필드를 변경할 때 사이드 이펙트가 발생**한다.
 - 아래 코드는 불변(Immutable)객체인 ImmutableAddress 를 공유하는 예제이다.
   ```java
@@ -161,7 +161,7 @@
     }
   }
   ```
-  ![img.png](../images/chap02/img11.png)
+  ![img.png](../resources/images/chap02/img11.png)
 - 불변객체의 값을 변경할 수 없어서 새로운 객체를 넣어서 변경했다. 즉, 사이드 이펙트를 막았다 !!
 ---
 ### 3. 불변 객체 - 값 변경
@@ -201,10 +201,10 @@
       }
   }
   ```
-  ![img.png](../images/chap02/img12.png)
+  ![img.png](../resources/images/chap02/img12.png)
 - 실행 순서를 메모리 구조로 확인해보면 아래와 같다.
 
-  ![img.png](../images/chap02/img13.png)
+  ![img.png](../resources/images/chap02/img13.png)
 ---
 ### 4. 정리
 > 이전까지 불변객체의 내용을 중요하게 얘기하고 많이 했던 이유는 `String` 클래스 떄문이다.</br>

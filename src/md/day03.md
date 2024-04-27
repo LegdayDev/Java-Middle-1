@@ -27,10 +27,10 @@
         }
     }
     ```
-    ![img.png](../images/chap02/img01.png)
+    ![img.png](../resources/images/chap02/img01.png)
 - `b=a` 라고 하면 `Java`에서 ***a의 값을 복사해서 b에 대입***하기 때문에 b의 값이 변경해도 a의 값이 변경되지 않는다.
 
-    ![img.png](../images/chap02/img02.png)
+    ![img.png](../resources/images/chap02/img02.png)
 #### 참조형 예제
 - 참조형은 인스턴스를 공유하기 때문에 b 값을 변경하면 a의 값도 변경된다.
   ```java
@@ -49,11 +49,11 @@
       }
   }
   ```
-  ![img_1.png](../images/chap02/img03.png)
+  ![img_1.png](../resources/images/chap02/img03.png)
 - 참조형변수 b에 참조형변수 a를 대입하면 **참조값을 복사**하여 b에 전달된다.(_**자바는 항상 값을 복사해서 대입**_)
 - 즉, _**참조값을 복사해서 넣었기 때문에 a와 b는 같은 인스턴스를 가리키게 된다.**_
 
-  ![img.png](../images/chap02/img04.png)
+  ![img.png](../resources/images/chap02/img04.png)
 ---
 ### 2. 공유 참조와 사이드 이펙트
 > `사이드 이펙트(Side Effect)`는 프로그래밍에서 어떤 계산이 주된 작업 외에 추가적인 부수 효과를 일으키는 것을 말한다
@@ -72,7 +72,7 @@
 - 이렇게 개발자에 의도는 b 의 값만 바꿀려고 했으나 참조형 변수의 특징으로 인해 a의 값도 바뀌게 되었다. 
 - 이런 *개발자에 의도와 다르게 변경이 의도치 않게 다른 부분에 영향을 미치는 경우는 디버깅이 어려워지고 코드의 안정성이 저하*될 수 있다.
 
-  ![img.png](../images/chap02/img05.png)
+  ![img.png](../resources/images/chap02/img05.png)
 #### 사이드 이펙트 해결 방안
 > 각각의 객체를 ***서로 다른 인스턴스를 참조***하게 하면 된다.
 - 위 코드를 수정해보면 a 와 b 를 다른 인스턴스를 참조하게 초기화하면 된다.
@@ -92,10 +92,10 @@
       }
   }
   ```
-  ![img.png](../images/chap02/img06.png)
+  ![img.png](../resources/images/chap02/img06.png)
 - 즉, `서울` 이라는 같은 값을 가지지만 _참조값은 전혀 다르기 때문에 값을 수정해도 서로 영향을 끼치지 않는다._
 
-  ![img.png](../images/chap02/img07.png)
+  ![img.png](../resources/images/chap02/img07.png)
 - 하지만 참조값을 다르게 한다고 해도 _**하나의 객체를 여러 변수가 공유하지 않도록 강제로 막을 수 있는 방법은 없다.**_
 - 아까 처럼 `b = a` 라고 코드를 짜도 어떤 오류가 발생하지 않는다. **즉, 자바 문법상 오류가 없기에 강제로 막을 수 있는 방법은 없다.**
   ```java

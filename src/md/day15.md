@@ -34,7 +34,7 @@
         }
     }
     ```
-  ![img.png](../images/chap06/img04.png)
+  ![img.png](../resources/images/chap06/img04.png)
 
 #### ZonedDateTime
 - `ZonedDateTime` 은 `LocalDateTime` 에 시간대 정보인 `ZoneID` 가 합쳐진 것이다.
@@ -67,7 +67,7 @@
         }
     }
     ```
-    ![img_1.png](../images/chap06/img05.png)
+    ![img_1.png](../resources/images/chap06/img05.png)
 
 #### OffsetDateTime
 - 위에있는 `ZonedDateTime` 에서 `ZoneId` 만 빠진 클래스이다.
@@ -96,7 +96,7 @@
         }
     }
     ```
-  ![img_2.png](../images/chap06/img06.png)
+  ![img_2.png](../resources/images/chap06/img06.png)
 
 #### ZonedDateTime vs OffsetDateTime
 - `ZonedDateTime` 은 **구체적인 지역 시간대를 다룰 때 사용**하며, **자동으로 썸머타임(일광 절약 시간)을 처리**한다.
@@ -159,7 +159,7 @@
     }
   }
   ```
-  ![img.png](../images/chap06/img07.png)
+  ![img.png](../resources/images/chap06/img07.png)
 ---
 ### 3. 기간, 시간의 간격 - Duration, Period
 - 시간의 개념은 `특정 시점의 시간` 과 `시간의 간격`으로 표현할 수 있다
@@ -206,7 +206,7 @@
       }
   }
   ```
-  ![img.png](../images/chap06/img08.png)
+  ![img.png](../resources/images/chap06/img08.png)
 
 #### Duration
 - ***두 시간 사이의 간격을 시, 분, 초(나노초) 단위***로 나타낸다.
@@ -241,4 +241,4 @@
       }
   }
   ```
-  ![img_1.png](../images/chap06/img09.png)
+  ![img_1.png](../resources/images/chap06/img09.png)

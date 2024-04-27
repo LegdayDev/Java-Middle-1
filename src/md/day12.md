@@ -63,7 +63,7 @@
       }
   }
   ```
-  ![img.png](../images/chap05/img13.png)
+  ![img.png](../resources/images/chap05/img13.png)
 
 #### DiscountService 제거
 - 이제 할인율 계산을 `Grade` 에서 하는데 굳이 `DiscountService가` 없어도 문제가 없다.
@@ -97,7 +97,7 @@
       }
   }
   ```
-  ![img.png](../images/chap05/img14.png)
+  ![img.png](../resources/images/chap05/img14.png)
 
 #### ENUM 목록
 - `Grade` 에 새로운 등급이 추가되더라도 기
@@ -117,5 +117,5 @@
       }
   }
   ```
-  ![img.png](../images/chap05/img15.png)
+  ![img.png](../resources/images/chap05/img15.png)
   - `values()` 는 모든 ENUM 상수들을 출력해주기 때문에 새로운 등급이 추가되도 기존 `main()`은 안건들여도 된다.

@@ -11,7 +11,7 @@
 
 > 시간의 개념은 `특정 시점의 시간(시각)` 과 `시간의 간격(기간)`으로 나눌 수 있다.
 >
-> ![img.png](../images/chap06/img10.png)
+> ![img.png](../resources/images/chap06/img10.png)
 
 - **특정 시점의 시간** : `Temporal`(`TemporalAccessor` 포함) 인터페이스를 구현한다.
     - `LocalDateTime` , `LocalDate`, `LocalTime` , `ZonedDateTime`, `OffsetDateTime` , `Instant` 등이 있다.
@@ -38,7 +38,7 @@
 
 > `TemporalUnit(ChronoUnit)` 인터페이스는 **시간의 단위**를 뜻하고, `TemporalField(ChronoField)` 는 **시간의 각 필드**를 뜻한다.
 >
-> ![img_1.png](../images/chap06/img11.png)
+> ![img_1.png](../resources/images/chap06/img11.png)
 
 ### 시간의 단위 - TemporalUnit
 
@@ -119,7 +119,7 @@ public class ChronoUnitMain {
 }
   ```
 
-![img.png](../images/chap06/img12.png)
+![img.png](../resources/images/chap06/img12.png)
 
 ### 시간 필드 - ChronoField
 
@@ -208,7 +208,7 @@ public class ChronoUnitMain {
         }
     }
     ```
-  ![img_1.png](../images/chap06/img13.png)
+  ![img_1.png](../resources/images/chap06/img13.png)
 
 ---
 
@@ -245,7 +245,7 @@ public class ChronoUnitMain {
         }
     }
     ```
-  ![img.png](../images/chap06/img14.png)
+  ![img.png](../resources/images/chap06/img14.png)
     - 위 코드처럼 `get()` 메서드의 `ChoronoField` 를 사용하였는데, `get()` 메서드는 `TemporalAccessor` 인터페이스의 메서드를 `LocalDateTime` 이 오버라이딩
       한것이다.
     - 그래서 `get()` 을 호출하면서 `TemporalAccessor` 의 구현체인 `ChronoField` 를 인자로 넘겨준 것이다.
@@ -277,7 +277,7 @@ public class ChronoUnitMain {
         }
     }
     ```
-  ![img_1.png](../images/chap06/img15.png)
+  ![img_1.png](../resources/images/chap06/img15.png)
     - `LocalDateTime` 을 포함한 특정 시점의 시간을 제공하는 클래스는 모두 **Temporal 인터페이스를 구현**한다.
     - `plus()` 메서드를 호출할 때는 **더할 숫자**와 **시간의 단위(Unit)**을 전달해주면 된다.
     - 똑같이 편의메서드도 제공된다, `plus(10, ChronoUnit.YEARS)` -> `plusYears(10)`
@@ -301,7 +301,7 @@ public class ChronoUnitMain {
             }
         }
         ```
-      ![img_2.png](../images/chap06/img16.png)
+      ![img_2.png](../resources/images/chap06/img16.png)
 - 이런 경우를 대비하여 `TemporalAccessor` 와 `Temporal` 인터페이스는 **현재 타입에서 특정 시간 단위나 필드를 사용할 수 있는지 확인할 수 있는 메서드를 제공**한다.
   ```java
   public class IsSupportedMain2 {
@@ -349,7 +349,7 @@ public class ChronoUnitMain {
       }
   }
   ```
-  ![img_3.png](../images/chap06/img17.png)
+  ![img_3.png](../resources/images/chap06/img17.png)
 
 #### TemporalAdjuster 인터페이스
 

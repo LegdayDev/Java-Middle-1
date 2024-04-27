@@ -32,7 +32,7 @@
         }
     }
     ```
-  ![img.png](../images/chap06/img18.png)
+  ![img.png](../resources/resources/images/chap06/img18.png)
 
 #### DateTimeFormatter 패턴
 [공식사이트](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns)
@@ -60,4 +60,4 @@
       }
   }
   ```
-  ![img_2.png](../images/chap06/img20.png)
+  ![img_2.png](../resources/resources/images/chap06/img20.png)
