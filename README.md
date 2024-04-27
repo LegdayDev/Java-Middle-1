@@ -80,3 +80,7 @@
 > 1. 날짜와 시간의 핵심 인터페이스
 > 2. 시간의 단위와 시간 필드
 > 3. 날짜와 시간 조회하고 조작하기
+
+## [17일차 : 날짜와 시간](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/resources/md/day17.md)
+> 1. 날짜와 시간 문자열 파싱과 포맷팅
+> 2. 문제
