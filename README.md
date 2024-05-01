@@ -85,7 +85,12 @@
 > 1. 날짜와 시간 문자열 파싱과 포맷팅
 > 2. 문제
 
-## [18일차 : 중첩 클래스, 내부 클래스 - 1]
+## [18일차 : 중첩 클래스, 내부 클래스 - 1](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/md/day18.md)
 > 1. 중첩 클래스, 내부 클래스란?
 > 2. 정적 중첩 클래스
 > 3. 정적 중첩 클래스의 활용
+
+## [19일차 : 중첩 클래스, 내부 클래스 - 1](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/md/day19.md)
+> 1. 내부 클래스
+> 2. 내부 클래스의 활용
+> 3. 같은 이름의 바깥 변수 접근
