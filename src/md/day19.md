@@ -205,4 +205,4 @@
       }
   }
   ```
-  ![img.png](img.png)
+  ![img.png](../resources/images/chap07/img11.png)
