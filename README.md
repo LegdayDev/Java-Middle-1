@@ -104,3 +104,8 @@
 ## [21일차 : 중첩 클래스, 내부 클래스 - 2](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/md/day21.md)
 > 1. 익명 클래스 - 시작
 > 2. 익명 클래스 - 활용
+
+## [22일차 : 예외 처리1 - 이론](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/md/day22.md)
+> 1. 예외처리가 필요한 이유 1 - 시작
+> 2. 예외처리가 필요한 이유 2 - 오류 상황 만들기
+> 3. 예외처리가 필요한 이유 3 - 반환 값으로 예외 처리
