@@ -110,15 +110,19 @@
 > 2. 예외처리가 필요한 이유 2 - 오류 상황 만들기
 > 3. 예외처리가 필요한 이유 3 - 반환 값으로 예외 처리
 
-## [23일차 : 예외 처리 1 - 이론](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/resources/md/day22.md)
+## [23일차 : 예외 처리 1 - 이론](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/resources/md/day23.md)
 > 1. 자바 예외 처리 1 - 예외 계층
 > 2. 자바 예외 처리 2 - 예외 기본 규칙
 > 3. 자바 예외 처리 3 - 체크 예외
 > 4. 자바 예외 처리 4 - 언체크 예외
 
-## [24일차 : 예외 처리 2 - 실습](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/resources/md/day23.md)
+## [24일차 : 예외 처리 2 - 실습](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/resources/md/day24.md)
 > 1. 예외 처리 도입 1 - 시작
 > 2. 예외 처리 도입 2 - 예외 복구
 > 3. 예외 처리 도입 3 - 정상, 예외 흐름 분리
 > 4. 예외 처리 도입 4 - 리소스 반환 문제
 > 5. 예외 처리 도입 5 - finally
+
+## [25일차: 예외 처리 2 - 실습](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/resources/md/day23.md)
+> 1. 예외 계층 1 - 시작
+> 2. 예외 계층 2 - 활용
