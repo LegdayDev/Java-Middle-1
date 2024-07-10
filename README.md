@@ -123,6 +123,11 @@
 > 4. 예외 처리 도입 4 - 리소스 반환 문제
 > 5. 예외 처리 도입 5 - finally
 
-## [25일차: 예외 처리 2 - 실습](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/resources/md/day23.md)
+## [25일차: 예외 처리 2 - 실습](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/resources/md/day25.md)
 > 1. 예외 계층 1 - 시작
 > 2. 예외 계층 2 - 활용
+
+## [26일차: 예외 처리 2 - 실습](https://github.com/LegdayDev/Java-Middle-1/blob/master/src/resources/md/day26.md)
+> 1. 실무 예외 처리 방안 1 - 설명
+> 2. 실무 예외 처리 방안 2 - 구현
+> 3. try-with-resources

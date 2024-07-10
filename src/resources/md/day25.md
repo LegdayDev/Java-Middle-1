@@ -178,7 +178,7 @@
   ```
 - `main()`에서 `NetworkServiceV3_2` 를 주입받아 테스트해보면 아래와 같이 출력이 된다.
 
-  ![img.png](img.png)
+  ![img.png](../images/chap10/img10.png)
 
 ### 여러 예외를 한번에 잡기
 - 위 코드에서는 `ConnectExceptionV3` , `NetworkClientExcpetionV3` , `Excpetion` 을 따로따로 `catch` 로 처리했지만 `|` 를 이용하여 한번에 처리도 가능하다.
